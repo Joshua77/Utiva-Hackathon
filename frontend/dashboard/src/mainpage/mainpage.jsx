@@ -9,6 +9,7 @@ import red from "../assets/red-health.png";
 import yellow from "../assets/yellow-health.png";
 import green from "../assets/green-health.png";
 import "./mainpage.css";
+import key from "../assets/key.png";
 
 function MainPage() {
   return (
@@ -19,11 +20,17 @@ function MainPage() {
             <img src={logo} alt="" />
           </div>
           <div className="navbar-right">
-            <p className="navbar-text"> Contact </p>
-            <p className="navbar-text"> +234556666667 </p>
-            <img className="navbar-text" src={emailicon} alt="" />
-            <img className="navbar-text" src={calendaricon} alt="" />
-            <li className="navbar-text">Login</li>
+            <div className="navbar-contact">
+              <p className="contact">Contact</p>{" "}
+              <p className="contact-num">+234-556-666-667</p>
+              <img className="nav-icon" src={emailicon} alt="" />
+              <img className="nav-icon" src={calendaricon} alt="" />
+            </div>
+          </div>
+
+          <div className="navbar-btn-section">
+            <p className="navbar-merchant-text">Trustfunds</p><p className="t-icon">T</p>
+            <div className="navbar-btn">Log Out</div>
           </div>
         </div>
         <div className="nav-bottom">
@@ -47,14 +54,14 @@ function MainPage() {
           <div className="mainpage-content-left-top">
             <div className="transactions">
               <h2>Transactions</h2>
-              <p>January - August 2023</p>
+              <p className="subheading-text">January - August 2023</p>
               <div className="transactions-calendar">
                 <div>
                   <img src={bigcalendar} alt="" />
                 </div>
                 <div className="calendar-item">
-                  <h5>Suspected Activities</h5>
-                  <p>245</p>
+                  <h4>Suspected Activities</h4>
+                  <h3>245</h3>
                 </div>
               </div>
               <div className="transactions-calendar">
@@ -62,8 +69,8 @@ function MainPage() {
                   <img src={bigcalendar} alt="" />
                 </div>
                 <div className="calendar-item">
-                  <h5>Suspected Activities</h5>
-                  <p>245</p>
+                  <h4>Suspected Activities</h4>
+                  <h3>245</h3>
                 </div>
               </div>
               <div className="transactions-calendar">
@@ -71,15 +78,14 @@ function MainPage() {
                   <img src={bigcalendar} alt="" />
                 </div>
                 <div className="calendar-item">
-                  <h5>Suspected Activities</h5>
-                  <p>245</p>
+                  <h4>Suspected Activities</h4>
+                  <h3>245</h3>
                 </div>
               </div>
             </div>
 
             <div className="health-score">
               <h2>Security Health Score</h2>
-              <p>January - August 2023</p>
               <div className="health-score-progress">
                 <p>PROGRESS SCORE</p>
                 <p>Medium Safety</p>
@@ -92,7 +98,7 @@ function MainPage() {
             </div>
           </div>
           <div className="mainpage-content-left-bottom">
-            <h3>Breaches</h3>
+            <h2 className="breach">Breaches</h2>
             <div className="breach-mail">
               <div className="breach-mail-icon">
                 <img src={warningicon} alt="" />
@@ -121,7 +127,7 @@ function MainPage() {
         <div className="mainpage-content-right">
           <div className="company-activity">
             <h2>Company Activity</h2>
-            <p>January - August 2023</p>
+            <p className="subheading-text">January - August 2023</p>
             <div className="activity-mail">
               <div className="activity-mail-icon">
                 <img src={green} alt="" />
@@ -153,11 +159,8 @@ function MainPage() {
             <p className="activity-text">Admin disabled Leadway Trust</p>
           </div>
 
-
-
-
           <div className="company-activity">
-            <p>Yesterday, July 21 2023.</p>
+            <p className="subheading-text">Yesterday, July 21 2023.</p>
             <div className="activity-mail">
               <div className="activity-mail-icon">
                 <img src={green} alt="" />
@@ -187,6 +190,22 @@ function MainPage() {
               1 hour ago
             </div>
             <p className="activity-text">Admin disabled Leadway Trust</p>
+          </div>
+        </div>
+
+        <div className="secure-account">
+          <div className="secure-account-text">
+            Learn to secure your accounts
+          </div>
+          <div className="subscribe">
+            <div className="subscribe-newsletter">
+              <div>Subscribe to our Newsletter</div>{" "}
+              <div className="email-text">Email</div>
+            </div>
+          </div>
+          <div className="become-merchant">
+            <img src={key} alt="become-a-merchant" />{" "}
+            <p className="merchant-cta">Become a merchant today!</p>
           </div>
         </div>
       </section>

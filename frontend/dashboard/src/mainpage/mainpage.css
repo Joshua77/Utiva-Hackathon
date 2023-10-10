@@ -11,19 +11,43 @@
     width: 1440px;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: self-start;
-    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid blueviolet; */
 }
 
+.navbar-left{
+    margin-right: 45%;
+}
 .navbar-right{
-    display: flex;
     height: 40px;
+    width: 22%;
+    /* border: 1px solid #002138; */
+    border-right: 4px solid;
+    background-color: #F3F4F4;
+    padding: 0 10px;
+}
+.navbar-contact{
+    display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     flex-direction: row;
-    justify-content: flex-end;
-    width: 65%;
-    /* border: 1px solid red; */
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-num{
+    color: blue;
+}
+
+.nav-icon{
+    height: 20px;
+    width: 20px;
 }
 
 .navbar-text{
@@ -35,13 +59,49 @@
     margin-right: 20px;
 }
 
+.navbar-btn{
+    box-shadow: 0.5px 2px 0px 2px rgba(0, 0, 0, 0.35);
+    width: 35%;
+    border-radius: 10px;
+    padding: 0 6px;
+    font-weight: 500;
+}
+
+.navbar-merchant-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.t-icon{
+    background-color: #2C71F0;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 18px;
+    margin-left: -60px;
+}
+
+.navbar-btn-section{
+    display: flex;
+    height: 40px;
+    width: 22%;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* border: 1px solid pink; */
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar-image{
     align-items: center;
     height: 16px;
 }
 
+
 .nav-bottom{
-    background-color: aquamarine;
+    background-color: #00AC6B;
     width: 1440px;
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +179,7 @@
     align-items: flex-start;
     width: 100%;
     padding-left: 5%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .breach-mail{
@@ -127,7 +187,7 @@
     font-size: 16px;
     color: grey;
     margin-bottom: 2px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,10 +200,14 @@
 }
 .breach-text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
-    color: black;
+    font-size: 16px;
+    color: grey;
     margin-bottom: 6px;
     margin-left: 20px;
+}
+
+.breaches{
+    color: #9747FF;
 }
 
 .resolve-button{
@@ -152,7 +216,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 18.5%;
-    background-color: blueviolet;
+    background-color: #9747FF;
     color: white;
     font-size: 16px;
     padding: 12px 30px;
@@ -173,7 +237,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .health-score-progress{
@@ -197,13 +261,13 @@
 }
 
 .safety-button{
-    border-radius: 5px solid blueviolet;
+    border-radius: 5px solid #9747FF;
     margin-top: 5%;
     margin-bottom: 5%;
     align-self: center;
     background-color: white;
-    color: blueviolet;
-    border-color: blueviolet;
+    color: #9747FF;
+    border-color: #9747FF;
     font-size: 16px;
     padding: 16px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -215,7 +279,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin-bottom: 60px;
 }
 
@@ -224,7 +288,7 @@
     font-size: 16px;
     color: grey;
     margin-bottom: 2px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -239,12 +303,10 @@
 .activity-text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
-    color: black;
+    color: #2C71F0;
     margin-bottom: 12px;
     margin-left: 60px;
 }
-
-
 
 
 .transactions{
@@ -258,7 +320,8 @@
 
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
+    color: black;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -270,7 +333,7 @@ h2{
     margin-top: 7%;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid rgb(0, 21, 255);
+    /* border: 1px solid rgb(0, 21, 255); */
 }
 
 .transactions-calendar-item{
@@ -278,12 +341,84 @@ h2{
       margin-left: 10%;
 }
 
+/*styling for the sub heading texts for the main page*/
+.subheading-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .calendar-item{
-   border: 1px solid yellowgreen;
+   /* border: 1px solid yellowgreen; */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
    width: 70%;
    padding-left: 40px;
+   color: grey;
+}
+
+.secure-account{
+    /* border: 1px solid orange; */
+    width: 100%;
+}
+
+.secure-account-text{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-left: 3%;
+    margin-top: 1%;
+    color: grey;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.become-merchant{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.merchant-cta{
+    margin-left: 20px;
+    background-color: #9747FF;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 400;
+}
+.subscribe{
+   margin-left: 3%;
+   margin-top: 1%;
+   
+}
+
+.subscribe-newsletter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    height: 60px;
+    background-color: #9747FF;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.email-text{
+    border-radius: 20px;
+    margin-left: 10%;
+    color: black;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 5px 12px;
 }

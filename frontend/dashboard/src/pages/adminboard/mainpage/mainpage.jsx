@@ -1,17 +1,20 @@
 import React from "react";
-import logo from "../assets/binva.png";
-import emailicon from "../assets/email-icon.png";
-import searchicon from "../assets/search.png";
-import calendaricon from "../assets/calendar.png";
-import warningicon from "../assets/email-icon.png";
-import bigcalendar from "../assets/big-calendar.png";
-import red from "../assets/red-health.png";
-import yellow from "../assets/yellow-health.png";
-import green from "../assets/green-health.png";
+import logo from "../../../assets/binva.png";
+
+import emailicon from "../../../assets/email-icon.png";
+import searchicon from "../../../assets/search.png";
+import calendaricon from "../../../assets/calendar.png";
+import warningicon from "../../../assets/email-icon.png";
+import bigcalendar from "../../../assets/big-calendar.png";
+import red from "../../../assets/red-health.png";
+import yellow from "../../../assets/yellow-health.png";
+import green from "../../../assets/green-health.png";
 import "./mainpage.css";
-import key from "../assets/key.png";
+import key from "../../../assets/key.png";
+
 
 function MainPage() {
+
   return (
     <>
       <section className="">
@@ -33,9 +36,10 @@ function MainPage() {
             <div className="navbar-btn">Log Out</div>
           </div>
         </div>
+
         <div className="nav-bottom">
           <div className="navbar-toggle">
-            <img className="navbar-toggle-icon" src={emailicon} alt="" />
+           
           </div>
           <div className="nav-bottom-menu">
             <p className="nav-bottom-menu-item">Name</p>
@@ -49,9 +53,12 @@ function MainPage() {
           </div>
         </div>
       </section>
+
+
       <section className="mainpage-content">
         <div className="mainpage-content-left">
           <div className="mainpage-content-left-top">
+            
             <div className="transactions">
               <h2>Transactions</h2>
               <p className="subheading-text">January - August 2023</p>

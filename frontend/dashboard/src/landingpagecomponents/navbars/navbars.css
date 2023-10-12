@@ -1,0 +1,16 @@
+.navbarsContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+.navbarsList{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.list{
+    margin-left: 10px;
+}

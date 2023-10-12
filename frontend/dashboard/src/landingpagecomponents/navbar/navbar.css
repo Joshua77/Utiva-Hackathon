@@ -1,0 +1,21 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 228, 228);
+    position: sticky;
+    top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+}
+.navbarList{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+.list{
+    margin-left: 10px;
+    margin-right: 10px;
+}

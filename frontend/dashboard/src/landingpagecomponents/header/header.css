@@ -1,0 +1,68 @@
+.headerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    background-color: green;
+    padding: 70px;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 55px;
+}
+p{
+    font-family: 'Varela', sans-serif;
+    color: #fff;
+    line-height: 25px;
+    font-size: 16px;
+}
+.headerP{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+button{
+    height: 38px;
+    border-radius: 5px;
+    width: 160px;
+    cursor: pointer;
+}
+.freeTrial{
+    margin-right: 5px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+}
+.demo{
+    color: #fff;
+    background-color: green;
+    border-color: #fff;
+}
+.business{
+    background-color: green;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.businessP{
+    margin-bottom: 30px;
+}
+
+.businessNames{
+    margin-right: 30px;
+    padding-bottom: 40px;
+}
+.nextPage{
+    background-color: #fff;
+    padding: 60px;
+    align-items: center;
+    margin-right: 200px;
+}
+h2{
+    font-size: 29px;
+    font-family: 'Varela', sans-serif;
+}
+.nextPageP{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 18px;
+}

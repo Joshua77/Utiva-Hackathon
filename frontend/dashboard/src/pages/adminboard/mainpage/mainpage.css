@@ -1,10 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    max-width: 1440px;
+    box-sizing: border-box; 
 }
-
+#root{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     display: flex;
     /* width: 100vw; */
@@ -12,6 +15,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    margin-top: 0px;
     /* border: 1px solid blueviolet; */
 }
 
@@ -39,6 +43,7 @@
 .contact{
     font-size: 18px;
     font-weight: 600;
+    color: black;
 }
 
 .contact-num{
@@ -61,21 +66,23 @@
 
 .navbar-btn{
     box-shadow: 0.5px 2px 0px 2px rgba(0, 0, 0, 0.35);
-    width: 35%;
+    width: 25%;
     border-radius: 10px;
-    padding: 0 6px;
+    padding: 0 4px;
     font-weight: 500;
 }
 
 .navbar-merchant-text{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
+    color: black;
 }
 
 .t-icon{
     background-color: #2C71F0;
     color: white;
     border-radius: 50%;
+    align-items: center;
     font-size: 12px;
     width: 20px;
     height: 18px;
@@ -102,7 +109,7 @@
 
 .nav-bottom{
     background-color: #00AC6B;
-    width: 1440px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     height: 110px;
@@ -146,6 +153,7 @@
 .nav-bottom-menu-item{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px; 
+    color: black;
 }
 
 .mainpage-content{
@@ -160,7 +168,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 80px;
-    width: 65%;
+    width: 75%;
 }
 
 .mainpage-content-left-top{
@@ -179,7 +187,7 @@
     align-items: flex-start;
     width: 100%;
     padding-left: 5%;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .breach-mail{
@@ -187,12 +195,12 @@
     font-size: 16px;
     color: grey;
     margin-bottom: 2px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 30%;   
+    width: 35%;   
 }
 
 .breach-mail-icon{
@@ -228,7 +236,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 80px;
-    width: 35%;
+    width: 25%;
+    border: 1px solid red;
 }
 
 .health-score{
@@ -277,7 +286,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     /* border: 1px solid yellow; */
     margin-bottom: 60px;
@@ -293,6 +303,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-self: flex-start;
     width: 30%; 
     margin-left: 30px;  
 }
@@ -306,16 +317,18 @@
     color: #2C71F0;
     margin-bottom: 12px;
     margin-left: 60px;
+    align-self: flex-start;
 }
 
 
 .transactions{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5%;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-    
+    border: 1px solid cyan;
 }
 
 h2{
@@ -329,8 +342,8 @@ h2{
     display: flex;
     width: 100%;
     padding-left: 10%;
-    margin-bottom: 7%;
-    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     flex-direction: row;
     flex-wrap: wrap;
     /* border: 1px solid rgb(0, 21, 255); */
@@ -422,3 +435,5 @@ h2{
     font-size: 20px;
     padding: 5px 12px;
 }
+
+

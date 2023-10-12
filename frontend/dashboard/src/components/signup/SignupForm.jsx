@@ -1,11 +1,11 @@
 import { useState } from "react";
+import "./SignupForm.css";
 
-import "./App.css";
 
-function SignUp() {
+function SignupPage() {
   return (
     <>
-      <div className="home">
+      <div>
         <h1>WELCOME TO SIGN UP PAGE</h1>
         
       </div>
@@ -13,4 +13,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignupPage;

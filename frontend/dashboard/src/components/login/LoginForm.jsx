@@ -1,16 +1,15 @@
 import { useState } from "react";
+import "./LoginForm.css"
 
-import "./App.css";
-
-function LogIn() {
+function LoginForm() {
   return (
     <>
-      <div className="home">
-        <h1>WELCOME TO SIGN UP PAGE</h1>
+      <div>
+        <h2>WELCOME TO LOGIN PAGE</h2>
         
       </div>
     </>
   );
 }
 
-export default LogIn;
+export default LoginForm;

@@ -1,6 +1,8 @@
 import React from "react";
-import logo from "../../../assets/binva.png";
+import { NavLink } from "react-router-dom";
 
+
+import logo from "../../../assets/binva.png";
 import emailicon from "../../../assets/email-icon.png";
 import searchicon from "../../../assets/search.png";
 import calendaricon from "../../../assets/calendar.png";
@@ -33,7 +35,7 @@ function MainPage() {
 
           <div className="navbar-btn-section">
             <p className="navbar-merchant-text">Trustfunds</p><p className="t-icon">T</p>
-            <div className="navbar-btn">Log Out</div>
+            <NavLink to="/login"><div className="navbar-btn">Log Out</div></NavLink>
           </div>
         </div>
 

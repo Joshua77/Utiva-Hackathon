@@ -17,6 +17,7 @@
     align-items: center;
     margin-top: 0px;
     /* border: 1px solid blueviolet; */
+   
 }
 
 .navbar-left{
@@ -115,6 +116,7 @@
     height: 110px;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .navbar-toggle{

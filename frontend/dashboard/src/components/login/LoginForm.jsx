@@ -24,7 +24,7 @@ function LoginForm() {
   return (
     <div className="login-box">
       <h2>Login | BINVA </h2>
-      <form>
+      <form className='form-area'>
         <label>Email Address</label>
         <input type="email" placeholder="username@gmail.com" />
         <label>Password</label>
@@ -32,7 +32,7 @@ function LoginForm() {
         <input type="button" value="Submit" />
       </form>
       <p className="para-2">
-       <a href='#'>Forget Password </a>Not have an account? <Link to="/SignupForm">Sign Up</Link>
+       <a href='#'>Forget Password </a>Not have an account? <Link to="/register">Sign Up</Link>
       </p>
     </div>
   );

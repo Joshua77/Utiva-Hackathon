@@ -1,12 +1,20 @@
 body {
     background-color: #aebb94;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .login-box {
-    width: 360px;
-    height: 280px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 70vh;
     border-radius: 3px;
     background-color: white;
   }
@@ -16,32 +24,50 @@ body {
     text-align: center;
     padding-top: 10px;
   }
+
+  .form-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px solid salmon; */
+    width: 70%;
+    height: 60%;
+  }
   
   form {
     width: 300px;
     margin-left: 20px;
     
   }
+
   
   form label {
     display: flex;
-    margin-top: 10px;
-    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    align-self: flex-start;
+   
   }
   
   form input {
-    width: 100%;
-    padding: 7px;
+    width: 80%;
+    padding: 10px;
     border: none;
     border: 1px solid gray;
     border-radius: 6px;
     outline: none;
+    margin: 10px 30px;
+    height: 12%;
+    font-size: 16px;
+  
   }
   
   input[type="button"] {
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
+    width: 80%;
+    height: 12%;
+    margin-top: 10%;
     border: none;
     background-color: #208513;
     color: white;
@@ -51,11 +77,18 @@ body {
   .para-2 {
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 15px;
-    margin-top: -10px;
+    font-size: 16px;
+    margin: 10px 10px;
+    /* border: 2px solid yellow; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .para-2 a {
     color: #49c1a2;
+    font-size: 16px;
+    
   }
   

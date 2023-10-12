@@ -1,4 +1,4 @@
-// import { useState } from "react";
+
 // import "./SignupForm.css";
 
 // function SignupPage() {
@@ -16,22 +16,31 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./SignupForm.css"; // Import the CSS file
 
 function SignupPage() {
+
+  // const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [error, setError] = useState("");
+  // const { register, signInWithGoogle } = useAuth();
   return (
     <div className="signup-box">
       <h1>BINVA</h1>
       <h3>Create an account for your Business </h3>
       <form className="form-area">
         <label>Email Address</label>
-        <input type="email" placeholder="username@gmail.com" />
+        <input type="email" placeholder="username@gmail.com" value={email} required onChange={(e) => setEmail(e.target.value)}
+          />
         <label>Full Name</label>
-        <input type="text" placeholder="Binva Pro" />
+        <input type="text" placeholder="Binva Pro" value={fullname} required onChange={(e) => setName(e.target.value)} />
         <label>Password</label>
-        <input type="password" placeholder="**********" />
+        <input type="password" placeholder="**********" value={password} required onChange={(e) => setPassword(e.target.value)} />
         <label>Confirm Password</label>
-        <input type="password" placeholder="**********" />
+        <input type="password" placeholder="**********" value={password} required onChange={(e) => setPassword(e.target.value)} />
         <input type="button" value="Submit" />
 
         <p className="para-2">

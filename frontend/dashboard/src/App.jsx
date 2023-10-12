@@ -29,8 +29,8 @@ function App(props) {
 return (
   <Router>
       <Routes>
-      {/* <Route exact path="/" element={<LandingPage />} /> */}
-      <Route exact path="/" element={<MainPageLayout />} />
+      <Route exact path="/" element={<LandingPage />} />
+      <Route exact path="/admin" element={<MainPageLayout />} />
       <Route exact path="/login" element={<LoginForm />} />
       <Route exact path="/register" element={<SignupPage />} />
       {/* <Route exact path="/account" element={<MainPage />} /> */}
